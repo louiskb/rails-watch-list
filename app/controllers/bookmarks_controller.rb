@@ -24,7 +24,7 @@ class BookmarksController < ApplicationController
     if @bookmark.destroy
       redirect_to list_path(@list)
     else
-      rend "list/show", status: :unprocessable_content
+      render "list/show", status: :unprocessable_content
     end
   end
 
