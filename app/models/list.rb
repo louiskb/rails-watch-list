@@ -1,6 +1,6 @@
 class List < ApplicationRecord
   # associations
-  has_many :bookmarks, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy # creates a method list.bookmarks ?
   has_many :movies, through: :bookmarks
   has_one_attached :photo
 

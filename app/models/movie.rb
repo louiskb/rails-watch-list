@@ -1,6 +1,6 @@
 class Movie < ApplicationRecord
   # associations
-  has_many :bookmarks
+  has_many :bookmarks # creates a method movie.bookmarks ?
 
   # validations
   # validates :column_name, whatever_validation

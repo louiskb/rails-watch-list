@@ -1,7 +1,7 @@
 class Bookmark < ApplicationRecord
   # associations
-  belongs_to :movie
-  belongs_to :list
+  belongs_to :movie # creates a method bookmark.movie ?
+  belongs_to :list # creates a method bookmark.list ?
 
   # validations
   # validates :column_name, whatever_validation
