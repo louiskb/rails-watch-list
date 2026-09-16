@@ -11,7 +11,6 @@ puts "Creating movies.... \n"
 
   response['results'].each do |movie_hash|
     puts "...creating the movie #{movie_hash['title']}..."
-    puts
     # create an instance with the hash
     Movie.create!(
       poster_url: "https://image.tmdb.org/t/p/w500" + movie_hash['poster_path'],
